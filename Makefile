@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Wall -pedantic -g -DUNIX_HOST -DVER=\"`svnversion -n`\"
+CFLAGS=-Wall -pedantic -g -DUNIX_HOST -DVER=\"`git rev-list --all --count`\"
 LIBS=-lm -lreadline
 
 TARGET	= picoc
